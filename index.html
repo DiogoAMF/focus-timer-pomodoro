@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!--Links dos tipos de fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Descrição de pesquisa no google-->
+    <meta name="description" content="Temporizador estilo pomodoro" />
+
+    <!--Link das fontes-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Nome da pagina-->
+    <title>Focus Timer - Pomodoro</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!--Link que liga o CSS-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Link que liga o JavaScript-->
+    <script src="./js/index.js" defer type="module"></script>
+  </head>
+  <body>
+    <main>
+      <div id="timer">
+        <span class="minutes">25</span>
+        <span class="">:</span>
+        <span class="seconds">00</span>
+      </div>
+
+      <div id="controls">
+        <button class="play"><img src="./assets/play.svg" alt="" /></button>
+        <button class="pause hide">
+          <img src="./assets/pause.svg" alt="" />
+        </button>
+        <button class="stop hide">
+          <img src="./assets/stop.svg" alt="" />
+        </button>
+        <button class="set">
+          <img src="./assets/stop-watch.svg" alt="" />
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <button class="sound-on hide">
+        <img src="./assets/volume-medium.svg" alt="" />
+      </button>
+      <button class="sound-off">
+        <img src="./assets/volume-mute.svg" alt="" />
+      </button>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Manipulando tamanho do px pra rem*/
+  font-size: 62.5%;
+
+  /* Criando variáveis pra usar quando quiser*/
+  --bg-color: #121214;
+  --text-color: #ffffff;
+  
+  /* Criando uma função RGB penas mudando o base color*/
+  --base-color: 194;
+  
+  /* Manipulando as cores do base color*/
+  --primary-color: hsl(var(--base-color), 100%, 63%);
+  --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  /* Segue a ordem do html */
+  display: grid;
+
+  /* Tamanho minimo da altura é de 100% da tela */
+  min-height: 100vh;
+}
+
+main {
+  /* largura do intem */
+  justify-self: center;
+
+  /* Altura do item */
+  align-self: end;
+}
+
+#timer {
+  font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+  display: flex;
+  margin-bottom: 1.6rem;
+}
+
+button {
+  /* Deixa o fundo da imagem trasparente */
+  background-color: transparent;
+
+  /* Sem bordas*/
+  border: none;
+
+  /* Mostra uma mão ao passar o mouse */
+  cursor: pointer; 
+}
+
+button img {
+  width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+.hide {
+  display: none;
+}
+
+#controls {
+  /* Um tipo de valor*/
+  /* exp:width=largura 10rem=tamanho minimo, 10rem + 30vw=Ideal e 22.8rem= tamanho maximo*/
+  width: clamp(10rem, 10rem + 30vw, 22.8rem);
+  /* exp:width=altura 8rem=tamanho minimo, 5rem + 10vw=Ideal e 10.8rem= tamanho maximo*/
+  height: clamp(8rem, 5rem + 10vh, 10.8rem);
+  gap: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-primary-light);
+  border-radius: 99rem;
+}
+
+footer {
+  /* Largura final*/
+  justify-self: end;
+
+  /* Altura final*/
+  align-self: end;
+
+  /* Distancia do item com o final*/
+  padding: 0 4rem 3.2rem 0;
+}
